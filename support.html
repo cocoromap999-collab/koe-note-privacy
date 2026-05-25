@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koe Note — サポート / Support</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      padding: 24px 16px 60px;
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    header { margin-bottom: 32px; }
+    header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+    header p { font-size: 13px; color: #6e6e73; }
+    .lang-toggle { display: flex; gap: 8px; margin-bottom: 28px; }
+    .lang-toggle button {
+      padding: 6px 16px;
+      border-radius: 20px;
+      border: 1.5px solid #0071e3;
+      background: #fff;
+      color: #0071e3;
+      font-size: 13px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .lang-toggle button.active { background: #0071e3; color: #fff; }
+    .section {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .section h2 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .section p, .section ul {
+      font-size: 13px;
+      color: #515154;
+      line-height: 1.8;
+    }
+    .section ul { padding-left: 18px; }
+    .section ul li { margin-bottom: 6px; }
+    .contact-box {
+      background: #0071e3;
+      border-radius: 16px;
+      padding: 24px 20px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .contact-box p { color: rgba(255,255,255,0.85); font-size: 13px; margin-bottom: 12px; }
+    .contact-box a {
+      display: inline-block;
+      background: #fff;
+      color: #0071e3;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 28px;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+    .ja { display: block; }
+    .en { display: none; }
+    body.en-mode .ja { display: none; }
+    body.en-mode .en { display: block; }
+    footer { text-align: center; font-size: 12px; color: #6e6e73; margin-top: 32px; }
+    a.link { color: #0071e3; text-decoration: none; }
+    a.link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🎙️ Koe Note</h1>
+  <p class="ja">サポートページ</p>
+  <p class="en">Support</p>
+</header>
+
+<div class="lang-toggle">
+  <button class="active" onclick="setLang('ja')">日本語</button>
+  <button onclick="setLang('en')">English</button>
+</div>
+
+<!-- FAQ -->
+<div class="section">
+  <h2><span class="ja">よくある質問</span><span class="en">FAQ</span></h2>
+  <ul>
+    <li>
+      <strong><span class="ja">文字起こしが表示されない</span><span class="en">Transcription not showing</span></strong><br>
+      <span class="ja">設定 → プライバシー → 音声認識 で「Koe Note」をオンにしてください。</span>
+      <span class="en">Go to Settings → Privacy → Speech Recognition and enable Koe Note.</span>
+    </li>
+    <li>
+      <strong><span class="ja">録音できない</span><span class="en">Cannot record</span></strong><br>
+      <span class="ja">設定 → プライバシー → マイク で「Koe Note」をオンにしてください。</span>
+      <span class="en">Go to Settings → Privacy → Microphone and enable Koe Note.</span>
+    </li>
+    <strong><span class="ja">AIチャットが動かない</span><span class="en">AI Chat not working</span></strong><br>
+      <span class="ja">設定画面でAnthropicのAPIキーが正しく入力されているか確認してください。</span>
+      <span class="en">Check that your Anthropic API key is correctly entered in the app Settings.</span>
+    <li>
+      <strong><span class="ja">購入の復元ができない</span><span class="en">Cannot restore purchase</span></strong><br>
+      <span class="ja">設定画面 →「購入を復元」をタップしてください。同じApple IDでログインしていることを確認してください。</span>
+      <span class="en">Tap "Restore Purchase" in Settings. Make sure you're signed in with the same Apple ID used for the original purchase.</span>
+    </li>
+    <li>
+      <strong><span class="ja">ウィジェットが表示されない</span><span class="en">Widget not showing</span></strong><br>
+      <span class="ja">ホーム画面を長押し → ＋ → 「Koe Note」を検索して追加してください。</span>
+      <span class="en">Long press the home screen → tap + → search "Koe Note" and add the widget.</span>
+    </li>
+    <li>
+      <strong><span class="ja">データを削除したい</span><span class="en">Delete my data</span></strong><br>
+      <span class="ja">設定画面 →「すべてのデータを削除」からいつでも削除できます。</span>
+      <span class="en">Go to Settings → "Delete All Data" to remove all your data at any time.</span>
+    </li>
+  </ul>
+</div>
+
+<!-- Contact -->
+<div class="contact-box">
+  <p class="ja">解決しない場合はメールでお問い合わせください。通常1〜2営業日以内に返信します。</p>
+  <p class="en">If the issue persists, please contact us by email. We typically respond within 1–2 business days.</p>
+  <a href="mailto:9559tu666@gmail.com">9559tu666@gmail.com</a>
+</div>
+
+<!-- Links -->
+<div class="section">
+  <h2><span class="ja">関連リンク</span><span class="en">Links</span></h2>
+  <ul>
+    <li><a class="link" href="./index.html"><span class="ja">プライバシーポリシー</span><span class="en">Privacy Policy</span></a></li>
+  </ul>
+</div>
+
+<footer>
+  <p>© 2026 Nagi Studio. All rights reserved.</p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.body.classList.toggle('en-mode', lang === 'en');
+    document.querySelectorAll('.lang-toggle button').forEach((btn, i) => {
+      btn.classList.toggle('active', (i === 0 && lang === 'ja') || (i === 1 && lang === 'en'));
+    });
+  }
+</script>
+</body>
+</html>
